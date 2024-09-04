@@ -1,0 +1,246 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px #A9A9A9;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.responsive-form {
+    background-color: #fff;
+    color: #A9A9A9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #A9A9A9;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #A9A9A9;
+    font-size: 13px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    padding-left: 35%;
+}
+@media (max-width:900px) {
+    .error-message{
+        padding-left: 0%;
+    }
+    
+}
+
+@media (min-width: 600px) {
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-group label {
+        width: 30%;
+        margin-right: 20px;
+        text-align: right;
+        white-space: nowrap; 
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 70%;
+    }
+}
+
+/* Navbar container */
+.navbar-container {
+    padding: 10px 20px;
+  }
+  
+  /* Navbar list */
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar items */
+  .navbar-item {
+    margin: 0 10px;
+  }
+  
+  /* Navbar links */
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover effect on navbar links */
+  .navbar-link:hover {
+    background-color: #a5a3a3;
+    border-radius: 4px;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablet view */
+  @media (max-width: 768px) {
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-item {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 480px) {
+    .navbar-container {
+      padding: 15px;
+    }
+  
+    .navbar-link {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-item {
+      margin: 5px 0;
+      width: 100%;
+    }
+  
+    .navbar-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* Loading Animation Container */
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  /* Circle Loader */
+  .circle-loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
